@@ -8,7 +8,7 @@ model = tf.keras.models.load_model('handwritten_best.model.keras')
 
 st.markdown("# Handwritten Number Recognizer")
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Upload a photo of a **single digit**")
 if uploaded_file is not None:
 	# Read image as bytes
 	file_bytes = uploaded_file.read()
